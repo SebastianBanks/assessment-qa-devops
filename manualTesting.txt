@@ -11,3 +11,6 @@ cases:
 - press play again
 
 bugs:
+- see all bots btn
+- when you win, in the scoreboard it says you lost
+- play again doesn't go directly to drawing cards
