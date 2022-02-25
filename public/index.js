@@ -23,7 +23,7 @@ chooseHeader.classList.add('hide')
 yourDuoHeader.classList.add('hide')
 compDuoHeader.classList.add('hide')
 
-const localhost = "http:localhost:3000"
+//const localhost = "http:localhost:3000"
 
 const makeRobotChoiceCard = (bot) => {
     return `
@@ -137,7 +137,7 @@ const duel = () => {
     renderCompDuo()
     document.querySelectorAll('.bot-btn').forEach(btn => btn.classList.add('hide'))
     setTimeout(() => {
-        axios.post(`${localhost}/api/duel`, {compDuo, playerDuo})
+        axios.post(`/api/duel`, {compDuo, playerDuo})
             .then(({data}) => {
                 resultsText.textContent = data
                 playAgainBtn.classList.remove('hide')
@@ -160,7 +160,7 @@ const reset = () => {
 }
 
 const getPlayerStats = () => {
-    axios.get(`${localhost}/api/player`)
+    axios.get(`/api/player`)
         .then(({data: {wins, losses}}) => {
             winsText.textContent = `Wins: ${wins}`
             lossesTest.textContent = `Losses: ${losses}`
@@ -168,7 +168,7 @@ const getPlayerStats = () => {
 }
 
 const getAllBots = () => {
-    axios.get(`${localhost}/api/robots`)
+    axios.get(`/api/robots`)
         .then(({data}) => {
             allBotsDiv.innerHTML = ''
         
