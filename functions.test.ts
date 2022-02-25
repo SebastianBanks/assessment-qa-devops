@@ -6,7 +6,7 @@ const driver = new Builder().withCapabilities(Capabilities.chrome()).build()
 
 
 beforeAll(async () => {
-    await driver.get('http://localhost:3000/')
+    await driver.get('https://assessment-qa-devops-sb.herokuapp.com/')
 })
 
 afterAll(async () => {

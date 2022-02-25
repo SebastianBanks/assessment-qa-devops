@@ -6,7 +6,7 @@ const { } = require('./public/index.js')
 
 
 beforeAll(async () => {
-    await driver.get('http://localhost:3000/')
+    await driver.get('https://assessment-qa-devops-sb.herokuapp.com/')
 })
 
 afterAll(async () => {

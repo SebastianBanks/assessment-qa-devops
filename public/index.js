@@ -120,7 +120,7 @@ const putBotBack = (id) => {
 }
 
 const drawFive = () => {
-    axios.get(`${localhost}/api/robots/five`)
+    axios.get(`/api/robots/five`)
         .then(res => {
             choices = res.data.choices
             compDuo = res.data.compDuo
