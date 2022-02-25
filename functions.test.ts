@@ -14,6 +14,8 @@ afterAll(async () => {
 })
 
 describe('shuffleArray should shuffle the given array', () => {
-    // CODE HERE
+    test('should be same array', () => {
+        expect(shuffleArray([1, 2, 3, 4])).not.toBe([1, 2, 3, 4])
+    })
 })
 
