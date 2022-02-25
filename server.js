@@ -22,11 +22,11 @@ app.get("/", (req,res) => {
 
 app.use(express.static(path.join(__dirname, "./public")))
 
-
+l
 
 app.get('/api/robots', (req, res) => {
     try {
-        res.status(200).send(botsArr)
+        res.status(200).send(bots)
         rollbar.info('got the robots')
     } catch (error) {
         console.log('ERROR GETTING BOTS', error)
