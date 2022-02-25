@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "esModuleInterop": true
+    },
+    "files": [
+        "functions.test.js",
+        "duelDuo.test.js"
+    ]
+}

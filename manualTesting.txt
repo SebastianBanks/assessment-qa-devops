@@ -1,0 +1,13 @@
+plan:
+- make sure instructions are clear
+- the game does what you expect
+- make sure all the buttons work
+
+cases:
+- read instructions
+- press draw
+- choose two bots 
+- press dual
+- press play again
+
+bugs:
