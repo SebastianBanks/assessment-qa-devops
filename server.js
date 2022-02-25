@@ -22,7 +22,7 @@ app.get("/", (req,res) => {
 
 app.use(express.static(path.join(__dirname, "./public")))
 
-l
+
 
 app.get('/api/robots', (req, res) => {
     try {
