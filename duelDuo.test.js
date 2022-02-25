@@ -2,6 +2,7 @@
 const { Builder, Capabilities, By } = require("selenium-webdriver")
 require('chromedriver')
 const driver = new Builder().withCapabilities(Capabilities.chrome()).build()
+const { } = require('./public/index.js')
 
 
 beforeAll(async () => {

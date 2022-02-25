@@ -7,7 +7,7 @@ const {shuffleArray} = require('./utils')
 app.use(express.json())
 
 app.get("/", (req,res) => {
-    res.sendFile(path.join(__dirname, "../public/index.html"))
+    res.sendFile(path.join(__dirname, "../index.html"))
 })
 
 
@@ -75,7 +75,7 @@ app.get('/api/player', (req, res) => {
     }
 })
 
-app.use(express.static(path.join(__dirname, "../public")))
+app.use(express.static(path.join(__dirname, "../")))
 
 const port = process.env.PORT || 3000
 
